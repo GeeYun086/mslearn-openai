@@ -44,6 +44,7 @@ def main():
                 model = azure_oai_deployment,
                 temperature = 0.7,
                 max_tokens = 1200,
+                #stop=["\n"], #중지 시퀀스
                 messages=messages_array
             )
             generated_text = response.choices[0].message.content
