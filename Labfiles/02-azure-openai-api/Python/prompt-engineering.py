@@ -9,7 +9,7 @@ from openai import AsyncAzureOpenAI
 printFullResponse = False
 
 # 동시에 처리할 task 수 설정
-num_tasks = 3
+num_tasks = 1
 
 async def main():
     try:
